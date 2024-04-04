@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Square"
+    android:background="@drawable/squarebackpixels">
+
+
+    <EditText
+        android:id="@+id/angkakedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border"
+        android:hint="Masukan Sisi"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/hitungpersegi"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Hasil"
+        android:background="@drawable/border"
+        android:fontFamily="@font/googlesans_bold"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hitungpersegi" />
+
+    <ImageView
+        android:id="@+id/mukapersegi"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginEnd="295dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
